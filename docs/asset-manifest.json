@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/aicodechat/static/css/main.f203fccc.css",
+    "main.js": "/aicodechat/static/js/main.4a81a81d.js",
+    "static/js/787.4f83f46c.chunk.js": "/aicodechat/static/js/787.4f83f46c.chunk.js",
+    "index.html": "/aicodechat/index.html",
+    "main.f203fccc.css.map": "/aicodechat/static/css/main.f203fccc.css.map",
+    "main.4a81a81d.js.map": "/aicodechat/static/js/main.4a81a81d.js.map",
+    "787.4f83f46c.chunk.js.map": "/aicodechat/static/js/787.4f83f46c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f203fccc.css",
+    "static/js/main.4a81a81d.js"
+  ]
+}
