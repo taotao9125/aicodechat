@@ -1,0 +1,143 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.chat-rooms-list {
+	height: 100vh;
+	background-color: #191919;
+}
+.chat-rooms-list ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	color: #5e5e5e;
+}
+
+.chat-rooms-list ul li {
+	padding: 10px;
+	color: #fff;
+}
+
+/* .chat-rooms-list ul li:hover {
+	background: #eee;
+} */
+
+.chat-rooms-list ul .selected {
+	background: #303030;
+}
+
+.chat {
+	display: flex;
+}
+
+.chat .chat__rooms {
+	flex: 1;
+}
+
+.chat .chat__content {
+	flex: 4;
+}
+
+
+
+.chat__content {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+.chat__content .chat__title {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+
+.chat__content .chat__messages {
+	padding: 10px;
+	height: 100%;
+	overflow-y: scroll;
+	flex: 1;
+}
+
+.chat__content .chat__edit {
+	padding: 10px;
+	border-top: 1px solid #eee;
+}
+
+.chat__content .chat__edit textarea {
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+}
+
+.chat__message {
+	display: flex;
+	margin-bottom: 15px;
+	
+}
+
+.chat__me {
+	flex-direction: row-reverse;
+}
+
+.chat__message:last-child	{
+	margin-bottom: 0;
+}
+
+.chat__message .chat__message__user {
+	height: 70px;
+	width: 70px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 70px;
+	background-color: #f1f1ff;
+}
+
+/* css tooltips */
+.chat__message .chat__message__content {
+	padding: 10px;
+	border-radius: 4px;
+	background: #eee;
+	margin-left: 20px;
+	max-width: 400px;
+	position: relative;
+}
+
+
+.chat__me .chat__message__content {
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+.chat__message .chat__message__content::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 7.5px 15px 7.5px 0;
+	border-color: transparent #eee transparent transparent;
+	position: absolute;
+	left: -15px;
+	top: 50%;
+	margin-top: -7.5px;
+}
+
+
+.chat__me .chat__message__content {
+	background-color: #59b269;
+}
+.chat__me .chat__message__content::after{
+	border-width: 7px 0 7px 15px;
+	border-color: transparent transparent transparent #59b269;
+	left: 100%;
+	top: 50%;
+}
+
